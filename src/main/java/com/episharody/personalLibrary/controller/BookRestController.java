@@ -10,15 +10,15 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/personalLibrary")
-public class BookController {
+@RequestMapping("/api/personalLibrary")
+public class BookRestController {
 
     private BookService bookService;
 
     private JsonMapper jsonMapper;
 
     @Autowired
-    public BookController(BookService bookService, JsonMapper jsonMapper) {
+    public BookRestController(BookService bookService, JsonMapper jsonMapper) {
         this.bookService = bookService;
         this.jsonMapper = jsonMapper;
     }
